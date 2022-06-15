@@ -42,7 +42,43 @@ https://en.bem.info/methodology/quick-start/*/
 /*Sección Menu*/
 
 section.menu{
+    display:flex;
+    width:1136px;
+    height: 88px;
+    margin:0 auto;
+    justify-content: center;
+}
+.menu .menu__header {
+    display:flex;
+    width:40%;
+    align-items: center;
+    gap:15px
+}
+.menu__header img {
+    width: 16px;
+    height: 16px
+}
+.menu__title{
+    font-size: 16px;
 
+}
+.menu nav {
+    width:80%;
+    display:flex;
+    justify-content: center;
+    margin: 0px;
+}
+.menu nav .menu__list {
+    width:80%;
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
+    
+}
+.menu__list__item__contato{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
 }
 
 /*Sección Title*/
@@ -92,8 +128,10 @@ Utiliza las referencias de los breakpoints @media abajo */
 
 
 /*Tablet*/
-@media (min-width: 768px) {
-
+@media (max-width: 768px) {
+    body {
+        background-color: yellow;
+    } 
 /* Menú */
 
 /*title*/
@@ -109,7 +147,11 @@ Utiliza las referencias de los breakpoints @media abajo */
 }
 
 /*Mobile*/
-@media (min-width: 425px) {
+@media (max-width: 425px) {
+    body {
+        background-color: red;
+    } 
+};
 
 /*Menu*/
 
@@ -129,4 +171,3 @@ Utiliza las referencias de los breakpoints @media abajo */
 
 /*Footer*/
 
-}
